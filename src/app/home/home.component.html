@@ -1,0 +1,38 @@
+<body>
+
+  <h1 style="text-align: center">
+    Hey <br />
+    Myself Debasish!
+  </h1>
+  <br />
+  <h3 style="text-align: center">Welcome to my Portfolio!</h3>
+
+  <br />
+
+
+  <div class="col-sm-10" style="margin: auto">
+    <ngb-carousel>
+      <ng-template ngbSlide *ngFor="let image of images">
+        <div class="wrapper">
+          <img
+            [src]="image.src"
+            [style.width.%]="100"
+            [style.height.px]="500"
+            alt="slide image"
+          />
+        </div>
+
+        <div class="carousel-caption">
+          <h3>{{ image.title }}</h3>
+          <h5>{{ image.subtitle }}</h5>
+        </div>
+      </ng-template>
+    </ngb-carousel>
+  </div>
+
+ 
+  <h1 style="font-size: xx-large; text-align: center;">
+    Embrace the synergy of Ambition and Opportunity,
+  </h1>
+  <h1 style="text-align: center">Unleashing boundless possibilities!</h1>
+</body>
